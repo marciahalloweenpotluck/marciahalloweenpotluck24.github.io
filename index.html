@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Embed</title>
+</head>
+<body>
+    <div id="contentContainer">
+        <!-- First Google Sheet iframe -->
+        <iframe id="googleSheet1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDH7kFo1YnknYcsymDem3wVRNrQEYlw4P_DWiari_rNr_UGYNHnJhS5oMC-DMZ6xjycXgLWI7eR1Lb/pubhtml?widget=true&amp;headers=false" width="600" height="400" style="display:block;"></iframe>
+        
+        <!-- Second Google Sheet iframe -->
+        <iframe id="googleSheet2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_xLrSjRy372VW_c0n0NGp4v37aaMt5w79N66uMxH6pdPUp2kvmClhKV-ZaveVi9qWHaZcG3p7M-BV/pubhtml?widget=true&amp;headers=false" width="600" height="400" style="display:none;"></iframe>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById("googleSheet1").style.display = "none"; // Hide first Google Sheet after 10 seconds
+            document.getElementById("googleSheet2").style.display = "block"; // Show second Google Sheet after 10 seconds
+        }, 10000); // 10000 milliseconds = 10 seconds
+    </script>
+</body>
+</html>
+
+Add index.html
