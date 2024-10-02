@@ -1,46 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARCIA HALLOWEEN POTLUCK!👻ྀིྀིྀིྀིྀི👻ྀིྀིྀིྀིྀི👻ྀིྀིྀིྀིྀི</title> <!-- Change this title -->
-    <style>
-        body {
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
-            overflow: hidden; /* Prevent scrolling */
-        }
-
-        /* Container for the iframe */
-        #contentContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 600px; /* Full height of the viewport */
-        }
-
-        /* Make the iframe responsive */
-        iframe {
-            width: 100%; /* Full width of the viewport */
-            height: 600px; /* Full height of the viewport minus some margin */
-            border: none; /* Remove default border */
-        }
-    </style>
+    <title>MARCIA HALLOWEEN POTLUCK!👻ྀིྀིྀིྀིྀི👻ྀིྀིྀིྀིྀི👻ྀིྀིྀིྀིྀི</title>
 </head>
 <body>
     <div id="contentContainer">
         <!-- First Google Sheet iframe -->
-        <iframe id="googleSheet1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDH7kFo1YnknYcsymDem3wVRNrQEYlw4P_DWiari_rNr_UGYNHnJhS5oMC-DMZ6xjycXgLWI7eR1Lb/pubhtml?widget=true&amp;headers=false"></iframe>
+        <iframe id="googleSheet1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDH7kFo1YnknYcsymDem3wVRNrQEYlw4P_DWiari_rNr_UGYNHnJhS5oMC-DMZ6xjycXgLWI7eR1Lb/pubhtml?widget=true&amp;headers=false" width="600" height="400" style="display:block;"></iframe>
         
         <!-- Second Google Sheet iframe -->
-        <iframe id="googleSheet2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_xLrSjRy372VW_c0n0NGp4v37aaMt5w79N66uMxH6pdPUp2kvmClhKV-ZaveVi9qWHaZcG3p7M-BV/pubhtml?widget=true&amp;headers=false" style="display:none;"></iframe>
+        <iframe id="googleSheet2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_xLrSjRy372VW_c0n0NGp4v37aaMt5w79N66uMxH6pdPUp2kvmClhKV-ZaveVi9qWHaZcG3p7M-BV/pubhtml?widget=true&amp;headers=false" width="600" height="400" style="display:none;"></iframe>
     </div>
 
     <script>
-        // Function to switch between the two Google Sheets
         setTimeout(function() {
-            document.getElementById("googleSheet1").style.display = "none"; // Hide the first Google Sheet after 10 seconds
-            document.getElementById("googleSheet2").style.display = "block"; // Show the second Google Sheet
+            document.getElementById("googleSheet1").style.display = "none"; // Hide first Google Sheet after 10 seconds
+            document.getElementById("googleSheet2").style.display = "block"; // Show second Google Sheet after 10 seconds
         }, 10000); // 10000 milliseconds = 10 seconds
     </script>
 </body>
